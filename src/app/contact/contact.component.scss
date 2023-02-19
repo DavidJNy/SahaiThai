@@ -1,3 +1,5 @@
+$breakpoint-tablet: 768px;
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -35,7 +37,30 @@
       font-size: 16px;
       margin-bottom: 20px;
       border-radius: 4px;
-    //   border
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    form {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: left;
+
+      label {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
     }
   }
 }
